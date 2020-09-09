@@ -1,0 +1,21 @@
+%btn {
+  display: inline-block;
+  border: 5px;
+  padding: 1vw 2.5vw;
+  margin: 1vw;
+  text-transform: capitalize;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: lighten($color: $primaryColor, $amount: 10%);
+}
+
+.btn-secondary {
+  @extend %btn;
+  background-color: $secondaryColor;
+}
